@@ -1,0 +1,63 @@
+.container {
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr 1fr 30px;
+    grid-template-rows: auto;
+    grid-template-areas:
+            " left top    top    top    right"
+            " left header header header right"
+            " left photo1 photo2 photo3 right"
+            " left caption caption date right"
+            " left caption caption date right"
+            " left bottom bottom bottom right";
+}
+
+#title {
+    grid-area: header;
+    height: 80px;
+}
+
+#photo1 {
+    grid-area: photo1;
+}
+
+#photo2 {
+    grid-area: photo2;
+}
+
+#photo3 {
+    grid-area: photo3;
+}
+
+.caption {
+    grid-area: caption;
+}
+
+#date {
+    grid-area: date;
+}
+
+.photo {
+    height: 160px;
+}
+
+#border-top {
+    grid-area: top;
+    height: 30px;
+    background-color:black;
+}
+
+#border-left {
+    grid-area: left;
+    background-color:black;
+}
+
+#border-right {
+    grid-area: right;
+    background-color:black;
+}
+
+#border-bottom {
+    grid-area: bottom;
+    height: 30px;
+    background-color:black;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title> meme page </title>
+    <link rel="stylesheet" href="welcome.css" type="text/css" />
+        
+    </style>
+</head>
+<html>
+    <body>
+        <h1> {{greeting}}, Welcome to My Memes <br> <img src="https://i.pinimg.com/736x/e8/b3/a0/e8b3a0244b14d5563b3868da15bec8f7.jpg"></img></h1>
+        <h2> Pls don't steal these {{adjective}} memes pls</h2>
+        <form method=POST action="/showmeme">
+      Line 1 of Meme:<br>
+
+      <input type="text" name="user-first-ln" value="First Line of Meme">
+      <br>
+      Line 2 of Meme:<br>
+      <input type="text" name="user-second-ln" value="Second Line of Meme">
+      <br>
+      Meme Type:<br>
+       <select name="meme-type">
+        <option value="college-grad">Happy College Grad</option>
+        <option value="thinking-ape">Deep Thought Monkey</option>
+        <option value="coding">Learning to Code</option>
+        <option value="old-class">Old Classroom</option>
+        </select>
+      <input type="submit" value="Go!">
+</form>
+
+
+    </body>
+</html>

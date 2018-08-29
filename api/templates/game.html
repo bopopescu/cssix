@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game!</title>
+  </head>
+  <body>
+    <h2>{{question | safe}}</h2>
+    
+    <form method=POST action="/">
+        {% for answer_dict in answers %}
+            {% if (answer_dict['is_correct']) %}
+                <input type="radio" name="selected-answer" value="correct"> {{ answer_dict['text'] }} </input> <br>
+            {% else %}
+                <input type="radio" name="selected-answer" value="wrong"> {{ answer_dict['text'] }} </input> <br>
+            {% endif %}
+        {% endfor %}
+        <input type="submit">
+    </form>
+    
+    
+  </body>
+</html>

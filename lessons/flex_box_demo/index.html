@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test Page</title>
+    <style media="screen">
+      /* The first chunk of this style exist primarily so that you can see the elements - Flexbox would work without it, but it's easier to see when the font is large and the items have a background color */
+      /* Border-box sizing */
+      *, *:before, *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      /* Default to a sans-serif font */
+      html {
+        font-family: sans-serif;
+      }
+      /* Color each language element */
+      #ruby {background-color: #DF4638;}
+      #python {background-color: #8DAD53;}
+      #js {background-color: #A8D3DD;}
+      #hyper {background-color: #F7CC77;}
+      #css {background-color: #2454DB;}
+      #aframe {background-color: #DB4260;}
+      #p5 {background-color: #E88A9F;}
+      #bootstrap {background-color: #7157AD;}
+      #java {background-color: #CA2B1D;}
+      #swift {background-color: #ED7B46;}
+      /* Style the font of the h3 elements */
+      h3 {
+        font-size: 32px;
+        color: white;
+        text-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+        text-align: center;
+        white-space: nowrap;
+        padding: 10px 4px;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      /* Code your flex classes below */
+      /* Parent or Container elements */
+      div {
+          display:flex;
+          flex-wrap:wrap;
+          justify-content: center;
+      }
+      /* Child elements or items */
+      h3 {
+          flex:0 0 auto;
+          min-width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="row1">
+      <h3 id="ruby">Ruby</h3>
+      <h3 id="python">Python</h3>
+      <h3 id="p5">p5.js</h3>
+      <h3 id="bootstrap">Bootstrap</h3>
+      <h3 id="js">JavaScript</h3>
+    </div>
+    <div id="row2">
+      <h3 id="swift">Swift</h3>
+      <h3 id="hyper">HTML</h3>
+      <h3 id="aframe">A-Frame</h3>
+      <h3 id="css">CSS</h3>
+      <h3 id="java">Java</h3>
+    </div>
+  </body>
+</html>

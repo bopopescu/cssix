@@ -1,0 +1,38 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+            "header header header"
+            "photo1 photo2 photo3"
+            "caption caption date";
+}
+
+#title {
+    grid-area: header;
+    height: 80px;
+}
+
+#photo1 {
+    grid-area: photo1;
+}
+
+#photo2 {
+    grid-area: photo2;
+}
+
+#photo3 {
+    grid-area: photo3;
+}
+
+.caption {
+    grid-area: caption;
+}
+
+#date {
+    grid-area: date;
+}
+
+.photo {
+    height: 160px;
+}
